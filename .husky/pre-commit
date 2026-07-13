@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+cd infrastructure || exit 1
+
+terraform fmt -check -recursive
+terraform validate
+tflint
